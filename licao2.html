@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação Etária</title>
+</head>
+<body>
+
+
+
+    <Script>
+  
+
+        window.alert("***SEJA BEM VINDO AO COMEX***");
+      
+      function linha(){
+          document.write(" <hr>");
+      
+      }
+      function pular(){
+          document.write("<br><br>");
+      
+      }
+      function mostraTitulo(msg){
+          
+          document.write("<h1>"+"&gt;&gt;"+msg+"&lt;&lt;"+"</h1>");
+          linha();
+          pular();
+      
+      }
+      function mostraconteúdo(msg){
+      
+          document.write("<h2>"+msg+"</h2>");
+          pular();
+      
+      
+      }
+      function mostracodigo(msg){
+      
+      document.write("<h3> - "+msg+"</h3>");
+      
+      
+      }
+      function mostrarodapé(msg){
+          linha();
+          document.write("<h5>"+msg+"</h5>");
+          pular();
+      
+      }
+      
+      var titulo = "COMEX";
+      var primeiro = "LISTA DE CLIENTES";
+      var segundo = "CODIGO ";
+  
+      
+      
+      var mes1 = "JANEIRO";
+      var mes2 = "MARÇO";
+      var mes3 = "AGOSTO";
+      
+    
+ 
+    
+      mostraTitulo(titulo);
+      document.write("<h2>"+"CADASTRO DO CLIENTE"+"</h2>");
+        pular();
+        document.write("Cadastra nome do cliente");
+        pular();
+        document.write("<input type='text'>");
+        document.write("<button>Cria</button>");
+        var input = document.querySelector("input");
+        var button = document.querySelector("button");
+        button.onclick = 
+      mostraconteúdo(primeiro);
+      linha();
+
+    function exibir(){
+        mostraTitulo(titulo);
+        mostraconteúdo(primeiro);
+        linha();
+        document.write("<li>"+"NOME: "+input.value+"</li>");
+        mostrarodapé("ALURA LEVEL UP");
+    }
+      
+     
+      document.write("<li>"+"NOME: "+input.value+"</li>");
+
+      
+      var button = document.querySelector("button");
+        button.onclick =  exibir;
+      
+      
+
+
+     
+      mostrarodapé("ALURA LEVEL UP");
+      
+      </Script>
+  
+</body>
+</html>
