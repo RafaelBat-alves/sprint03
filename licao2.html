@@ -76,11 +76,16 @@
       linha();
 
     function exibir(){
+   
         mostraTitulo(titulo);
         mostraconteúdo(primeiro);
-        linha();
+        linha();     
+        for (var i = 0; i <= 5; i++) {
+      
         document.write("<li>"+"NOME: "+input.value+"</li>");
-        mostrarodapé("ALURA LEVEL UP");
+ 
+}
+mostrarodapé("ALURA LEVEL UP");
     }
       
      
@@ -89,8 +94,6 @@
       
       var button = document.querySelector("button");
         button.onclick =  exibir;
-      
-      
 
 
      
