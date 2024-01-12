@@ -58,29 +58,67 @@
       var mes1 = "JANEIRO";
       var mes2 = "MARÇO";
       var mes3 = "AGOSTO";
+
+
       
     
  
     
       mostraTitulo(titulo);
+
+
       document.write("<h2>"+"CADASTRO DO CLIENTE"+"</h2>");
+
+
+
         pular();
+
+
+
         document.write("Cadastra nome do cliente");
+
+
+
         pular();
+
+
         document.write("<input type='text'>");
         document.write("<button>Cria</button>");
+
+
         var input = document.querySelector("input");
         var button = document.querySelector("button");
-        button.onclick = 
+
+
+     
+        
       mostraconteúdo(primeiro);
+
+
+
       linha();
+
+
      
     function exibir(){
-        function mudar(){
-            document.write("<li>"+"NOME: "+input.value+"</li>");
+       
+        const contador = 1;
 
+        function mudar(){
+            
+        alert("Criado novo nome");
+        document.write("Codigo"+ contador);
+        document.write("<li>"+"NOME: "+input.value+"</li>");
+        contador++;
 }
+
+
 function mostraalgos(){
+    for (var i = 0; i < 9; i++) {
+        document.write("<li>"+"NOME: "+input.value+"</li>");
+
+  // more statements
+}
 
 
     
@@ -96,8 +134,8 @@ function mostraalgos(){
         document.write("<button id='mostraasd'> Mostra lista </button>");
         var button2 = document.querySelector("button");
         var button3 = document.getElementById("mostraasd");
-
         button2.onclick =  mudar;
+        button3.onclick = mostraalgos;
      
 
         linha();     
@@ -105,6 +143,8 @@ function mostraalgos(){
      
 
 mostrarodapé("ALURA LEVEL UP");
+
+
     }
       
      
